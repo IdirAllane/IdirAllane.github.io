@@ -18,7 +18,7 @@ export const reviews = [
         name: "James Bond",
         job: "AWS Developer",
         img: "https://image.gala.de/22315258/t/sM/v6/w960/r1.5/-/daniel-craig.jpg",
-        review: "Try-hard kombucha migas, viral keffiyeh mixtape butcher everyday carry chicharrones YOLO. Bespoke ramps selvage offal locavore palo santo XOXO poke glossier. Church-key fanny pack food truck craft beer selfies XOXO cronut before they sold out la croix.",
+        review: "Try-hard kombucha migas, viral keffiyeh mixtape butcher everyday carry chicharrones YOLO. Bespoke ramps selvage offal locavore palo santo XOXO poke glossier. Church-key fanny pack food truck craft beer selfies XOXO cronut.",
     },
     {
         id: 4,

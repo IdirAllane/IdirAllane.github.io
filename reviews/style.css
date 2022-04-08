@@ -76,7 +76,9 @@ body {
 }
 
 .review-wrapper .reviews h3 {
+  font-weight: 500;
   margin-bottom: 15px;
+  color: #1857a4;
 }
 
 .switch-review {
