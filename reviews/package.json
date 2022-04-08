@@ -1,0 +1,12 @@
+{
+    "name": "reviews",
+    "version": "1.0.0",
+    "description": "Use the left & right buttons to switch between reviews, or click the random button to get a random review.",
+    "main": "reviews.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC"
+}
