@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Random Color Generator</title>
+    </head>
+    <body>
+        <div class="app_navbar">
+            <img
+                src="https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_960_720.png"
+                alt="random colors"
+                id="logo_img"
+            />
+            <h1>RANDOM LINEAR GRADIENT GENERATOR</h1>
+        </div>
+
+        <div class="app_generator">
+            <div class="app_generator-wrapper">
+                <div class="app_buttonbox-title">
+                    <div class="app_buttonbox-item">
+                        <h1>First Color:</h1>
+                        <h1 id="hex_color1">#FFFFFF</h1>
+                    </div>
+                    <div class="app_buttonbox-item">
+                        <h1>Second Color:</h1>
+                        <h1 id="hex_color2">#FFFFFF</h1>
+                    </div>
+                    <div class="app_buttonbox-item">
+                        <h1>Direction:</h1>
+                        <h1 id="gradient_direction">none</h1>
+                    </div>
+                </div>
+
+                <button>click me</button>
+            </div>
+        </div>
+
+        <div class="app_footer">
+            <h3>
+                This is a random color gradient generator - click the button to
+                generate random linear gradients! If you like the output, just
+                copy the following CSS:
+            </h3>
+            <h4 id="css_code">
+                background: linear-gradient( direction, color1, color2)
+            </h4>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
