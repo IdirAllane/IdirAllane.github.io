@@ -22,7 +22,7 @@
 }
 
 .app_generator {
-    height: 82vh;
+    height: 77vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -75,7 +75,7 @@ button {
     background-color: rgb(228, 239, 255);
 }
 .app_footer {
-    height: 10vh;
+    height: 15vh;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -85,7 +85,7 @@ button {
     background-color: rgb(228, 239, 255);
     border-top: 1px solid lightblue;
 }
-.app_footer h4 {
+.app_footer h3 {
     margin-top: 10px;
     color: rgb(0, 136, 255);
 }

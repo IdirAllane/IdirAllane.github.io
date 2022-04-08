@@ -14,7 +14,9 @@
         let direction = directionGenerator();
 
         hexCode1.innerHTML = color1;
+        hexCode1.style.color = color1;
         hexCode2.innerHTML = color2;
+        hexCode2.style.color = color2;
         gradDirection.innerHTML = direction;
 
         background.style.background = `linear-gradient(${direction}, ${color1}, ${color2})`;
