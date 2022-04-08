@@ -65,8 +65,8 @@ body {
 }
 
 .review-wrapper .reviews img {
-  width: 140px;
-  height: 140px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   margin-bottom: 25px;
 }
@@ -99,7 +99,16 @@ body {
   margin: 15px;
   padding: 5px 15px;
   border-radius: 10px;
+  cursor: pointer;
   border: 2px solid rgba(18, 88, 150, 0.535);
   background-color: rgba(18, 88, 150, 0.188);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.switch-review button:hover {
+  background-color: aliceblue;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=style.css.map */
