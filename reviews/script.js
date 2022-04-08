@@ -12,6 +12,14 @@ const randomButton = document.getElementById("random");
 // declare iterator variable
 let counter = 0;
 
+// first loading
+window.addEventListener("DOMContentLoaded", () => {
+    img.src = reviews[counter].img;
+    name.innerHTML = reviews[counter].name;
+    job.innerHTML = reviews[counter].job;
+    review.innerHTML = reviews[counter].review;
+});
+
 // prev button functionality
 prevButton.addEventListener("click", () => {
     console.log("prev got clicked");
