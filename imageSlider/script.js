@@ -1,17 +1,18 @@
+// DOM elements
 const images = document.querySelectorAll("img");
 const dots = document.querySelectorAll(".dot");
+
+// variables
 let idx = 0;
 let transition = false;
 let timer;
 
 function moveImages(newIdx) {
     //removes current image from screen and removes selected dot
-
     images[idx].classList.remove("on");
     images[idx].classList.add("off");
     dots[idx].classList.remove("selected");
 
-    //add 1 to index
     idx++;
 
     if (newIdx != undefined) {
@@ -25,7 +26,6 @@ function moveImages(newIdx) {
     //brings next image on screen
     images[idx].classList.add("on");
     dots[idx].classList.add("selected");
-
     transition = true;
 
     //removes the .off class from transitioned image
@@ -44,7 +44,6 @@ function moveImages(newIdx) {
 // handle click function
 function clickHandler(newIdx) {
     return function () {
-        console.log("click", newIdx);
         if (transition) {
             return;
         }

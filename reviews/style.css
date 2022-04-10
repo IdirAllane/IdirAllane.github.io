@@ -1,119 +1,119 @@
 * {
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-  height: 100vh;
-  background-color: #125896;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+    height: 100vh;
+    background-color: #125896;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .review-wrapper {
-  height: 50vh;
-  width: 70vw;
-  background-color: aliceblue;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 1rem;
+    height: 55vh;
+    width: 70vw;
+    background-color: aliceblue;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 1rem;
 }
 
 .review-wrapper h1 {
-  width: 85%;
-  font-size: 2.75rem;
-  text-align: center;
-  border-bottom: 1px solid #1857a4;
-  margin-bottom: 15px;
+    width: 85%;
+    font-size: 2.75rem;
+    text-align: center;
+    border-bottom: 1px solid #1857a4;
+    margin-bottom: 15px;
 }
 
 .review-wrapper .reviews {
-  width: 85%;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    width: 85%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .review-wrapper .reviews img {
-  width: 170px;
-  height: 170px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 15px;
+    width: 170px;
+    height: 170px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
 
 .review-wrapper .reviews h2 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .review-wrapper .reviews h3 {
-  font-weight: 500;
-  margin-bottom: 15px;
-  color: #1857a4;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #1857a4;
 }
 
 .switch-review {
-  width: 85%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-top: 1px solid #1857a4;
+    width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: 1px solid #1857a4;
 }
 
 .switch-review button {
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin: 15px;
-  padding: 5px 15px;
-  border-radius: 10px;
-  cursor: pointer;
-  border: 2px solid rgba(18, 88, 150, 0.535);
-  background-color: rgba(18, 88, 150, 0.188);
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 15px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid rgba(18, 88, 150, 0.535);
+    background-color: rgba(18, 88, 150, 0.188);
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .switch-review button:hover {
-  background-color: aliceblue;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+    background-color: aliceblue;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 /*# sourceMappingURL=style.css.map */
