@@ -8,7 +8,7 @@ let animationId;
 
 function moveLinks() {
     //ticker speed
-    left -= 2;
+    left -= 4.5;
 
     // check if link has completely passed to left
     if (left <= -links[0].offsetWidth) {
