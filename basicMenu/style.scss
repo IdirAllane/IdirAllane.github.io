@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.menu-wrapper {
+    width: 80vw;
+    height: 100vh;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    h1 {
+        font-size: 4rem;
+        border-bottom: 4px solid lightblue;
+    }
+
+    .filter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            margin: 0 5px;
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: 2px solid rgb(92, 92, 92);
+            font-size: 1.15rem;
+            font-weight: 600;
+            background-color: rgba(173, 216, 230, 0.684);
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            transition: transform 0.1s ease-in;
+
+            &:hover {
+                transform: scale(1.035);
+                background-color: rgba(255, 255, 255, 0.684);
+                box-shadow: 0 0 10px 0 lightblue;
+            }
+        }
+    }
+    .menu-items {
+        width: 100%;
+        min-width: 700px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+        border-radius: 1rem;
+        background-color: rgb(189, 231, 245);
+
+        .menu-item {
+            min-width: 650px;
+            max-width: 650px;
+            height: 200px;
+            display: flex;
+            margin: 10px;
+            border-radius: 1rem;
+            background-color: rgb(255, 255, 255);
+            transition: box-shadow 0.3s ease;
+
+            &:hover {
+                box-shadow: 0 0 10px 0 white;
+            }
+            img {
+                height: 200px;
+                width: 300px;
+                padding: 10px;
+                object-fit: cover;
+                border-radius: 1rem;
+            }
+            .menu-content {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                gap: 10px;
+
+                .menu-title {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid lightblue;
+
+                    h4 {
+                        padding: 5px 10px;
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                    }
+                    #price {
+                        color: rgb(2, 162, 216);
+                        font-style: italic;
+                    }
+                }
+
+                .menu-description {
+                    padding: 0 10px;
+                    font-size: 1.15rem;
+                }
+            }
+        }
+    }
+}
