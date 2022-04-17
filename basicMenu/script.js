@@ -81,16 +81,13 @@ const menuData = [
     },
 ];
 
-//DOM Elements
 const filter = document.querySelector(".filter");
 const menu = document.querySelector(".menu-items");
 
-// filter buttons creator
 ["All", "Breakfast", "Dinner", "Dessert"].map((item) => {
     filter.innerHTML += `<button id=${item}>${item}</button>`;
 });
 
-// menu item creator function
 const menuHTML = (menu) => {
     return menu
         .map((item) => {
@@ -117,10 +114,8 @@ const menuHTML = (menu) => {
         .join("");
 };
 
-// Display Menu
 menu.innerHTML = menuHTML(menuData);
 
-// Filter Menu
 document.querySelectorAll("button").forEach((btn) => {
     btn.addEventListener("click", () => {
         const filteredData = menuData.filter((item) =>
