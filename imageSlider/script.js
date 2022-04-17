@@ -1,14 +1,11 @@
-// DOM elements
 const images = document.querySelectorAll("img");
 const dots = document.querySelectorAll(".dot");
 
-// variables
 let idx = 0;
 let transition = false;
 let timer;
 
 function moveImages(newIdx) {
-    //removes current image from screen and removes selected dot
     images[idx].classList.remove("on");
     images[idx].classList.add("off");
     dots[idx].classList.remove("selected");
@@ -23,17 +20,14 @@ function moveImages(newIdx) {
         idx = 0;
     }
 
-    //brings next image on screen
     images[idx].classList.add("on");
     dots[idx].classList.add("selected");
     transition = true;
 
-    //removes the .off class from transitioned image
     document.addEventListener("transitionend", (e) => {
         if (e.target.className == "off") {
             e.target.classList.remove("off");
 
-            //reset transition
             transition = false;
         }
     });
@@ -41,7 +35,6 @@ function moveImages(newIdx) {
     timer = setTimeout(moveImages, 5000);
 }
 
-// handle click function
 function clickHandler(newIdx) {
     return function () {
         if (transition) {
@@ -55,11 +48,9 @@ function clickHandler(newIdx) {
         moveImages(newIdx);
     };
 }
-// add eventlisteners to all dots
+
 for (let i = 0; i < dots.length; i++) {
     dots[i].addEventListener("click", clickHandler(i));
 }
-
-// call first function after 1sec
 
 timer = setTimeout(moveImages, 1000);
