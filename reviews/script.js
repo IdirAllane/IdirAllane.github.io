@@ -1,6 +1,5 @@
 import { reviews } from "./reviews.js";
 
-// get DOM Elements
 const img = document.querySelector("img");
 const name = document.getElementById("name");
 const job = document.getElementById("job");
@@ -9,10 +8,8 @@ const prevButton = document.getElementById("prev");
 const nextButton = document.getElementById("next");
 const randomButton = document.getElementById("random");
 
-// declare iterator variable
 let counter = 0;
 
-// first loading
 window.addEventListener("DOMContentLoaded", () => {
     img.src = reviews[counter].img;
     name.innerHTML = reviews[counter].name;
@@ -20,7 +17,6 @@ window.addEventListener("DOMContentLoaded", () => {
     review.innerHTML = reviews[counter].review;
 });
 
-// prev button functionality
 prevButton.addEventListener("click", () => {
     console.log("prev got clicked");
 
@@ -39,7 +35,6 @@ prevButton.addEventListener("click", () => {
     }
 });
 
-// next button functionality
 nextButton.addEventListener("click", () => {
     console.log("next got clicked");
 
@@ -58,7 +53,6 @@ nextButton.addEventListener("click", () => {
     }
 });
 
-//random review functionality
 randomButton.addEventListener("click", () => {
     counter = Math.floor(Math.random() * 4);
 
